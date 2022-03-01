@@ -4,11 +4,11 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
-.container{
+.custom-container{
     max-width: 1194px;
     margin: auto;
 }
-.header{
+.custom-header{
     display: flex;
     align-items: center;
     padding: 10px 0;
@@ -116,7 +116,7 @@ body{
     background-color: #fff;
     color: #5F5F61;
 }
-.button {
+.custom-button {
     border-radius: 25px;
     padding: 12px 50px;
     display: inline-block;
@@ -147,8 +147,16 @@ body{
     padding-bottom: 50px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
 }
-.card {
+@media screen and (max-width: 1150px) {
+    .custom-card {
+        min-width: 570px;
+        margin-top: 20px;
+    }
+}
+.custom-card {
     flex: 50%;
     position: relative;
     border-radius: 20px;
@@ -160,7 +168,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
 }
-.card:before {
+.custom-card:before {
     z-index: -1;
     content: "";
     position: absolute;
@@ -209,4 +217,136 @@ body{
     width: 100%;
     height: 100%;
     z-index: -2;
+}
+.week-delivery-text{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 23px;
+}
+.delivery-cards{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.delivery-card{
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 32px;
+    width: 275px;
+    height: 182px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.food-card-badge-1{
+    position: absolute;
+    width: 65.48px;
+    height: 33px;
+    left: 10.07px;
+    top: 16px;
+    border-radius: 30px;
+    background: #D0FD89;
+}
+.food-card-badge-2{
+    position: absolute;
+    width: 109.8px;
+    height: 33px;
+    left: 10.07px;
+    top: 16px;
+    border-radius: 30px;
+    background: #AEBC41;
+}
+.food-card-badge-3{
+    position: absolute;
+    width: 95px;
+    height: 33px;  
+    left: 10.07px;
+    top: 16px;
+    border-radius: 30px;
+    background: #B86B78;
+}
+.food-card-badge-4{
+    position: absolute;
+    width: 83px;
+    height: 33px;
+    left: 10.07px;
+    top: 16px;
+    border-radius: 30px;
+    background: #D68334;
+}
+.food-card-badge-5{
+    position: absolute;
+    width: 95px;
+    height: 33px;
+    left: 10.07px;
+    top: 16px;
+    border-radius: 30px;
+    background: #CD6255;
+}
+.food-card-badge-6{
+    position: absolute;
+    width: 101px;
+    height: 33px;
+    left: 10.07px;
+    top: 16px;
+    border-radius: 30px;
+    background: #FFFDBF;
+}
+.food-card-badge-7{
+    position: absolute;
+    width: 125px;
+    height: 33px;
+    left: 10.07px;
+    top: 16px;
+    border-radius: 30px;
+    background: #F6FDC8;
+}
+.food-card-badge-8{
+    position: absolute;
+    width: 147px;
+    height: 33px;
+    left: 10.07px;
+    top: 16px;
+    border-radius: 30px;
+    background: #FEF7FE;
+}
+.badge-text{
+    position: absolute;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    padding: 5px 10px;
+}
+.color-text-dark{
+    color: #49494F;
+}
+.color-text-white{
+    color: #FFFFFF;
+}
+.card{
+    width: 270px;
+    height: 296px;
+}
+.text-style-bold{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+    margin-top: 40px;
+}
+.text-style-normal{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
 }
